@@ -39,8 +39,8 @@ const RegistrationStats = ({ registration }) => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl font-bold text-slate-900 mb-4">Registration Overview</h2>
-          <p className="text-slate-600 max-w-2xl mx-auto">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Registration Overview</h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">
             Comprehensive breakdown of event registrations by participant categories
           </p>
         </motion.div>
@@ -67,12 +67,12 @@ const RegistrationStats = ({ registration }) => {
                     whileInView={{ scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: index * 0.1 + 0.3 }}
-                    className="text-2xl font-bold text-slate-900"
+                    className="text-2xl font-bold text-gray-900"
                   >
                     {stat.value}
                   </motion.span>
                 </div>
-                <h3 className="font-semibold text-slate-700">{stat.label}</h3>
+                <h3 className="font-semibold text-gray-700">{stat.label}</h3>
               </motion.div>
             );
           })}
@@ -86,13 +86,13 @@ const RegistrationStats = ({ registration }) => {
           className="grid grid-cols-1 md:grid-cols-2 gap-6"
         >
           <div className="card">
-            <h3 className="font-semibold text-slate-900 mb-3">Registration Period</h3>
-            <p className="text-slate-600">{registration.period}</p>
+            <h3 className="font-semibold text-gray-900 mb-3">Registration Period</h3>
+            <p className="text-gray-600">{registration.period}</p>
           </div>
           
           <div className="card">
-            <h3 className="font-semibold text-slate-900 mb-3">Registration Mode</h3>
-            <p className="text-slate-600">{registration.mode}</p>
+            <h3 className="font-semibold text-gray-900 mb-3">Registration Mode</h3>
+            <p className="text-gray-600">{registration.mode}</p>
           </div>
         </motion.div>
       </div>

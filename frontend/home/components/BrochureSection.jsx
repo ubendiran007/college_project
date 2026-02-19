@@ -12,8 +12,8 @@ const BrochureSection = ({ brochure }) => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl font-bold text-slate-900 mb-4">Event Brochure</h2>
-          <p className="text-slate-600 max-w-2xl mx-auto">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Event Brochure</h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">
             Official event documentation and detailed information brochure
           </p>
         </motion.div>
@@ -35,11 +35,11 @@ const BrochureSection = ({ brochure }) => {
                 <FileText className="w-10 h-10 text-red-600" />
               </motion.div>
               
-              <h3 className="text-xl font-semibold text-slate-900 mb-2">
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">
                 {brochure.filename}
               </h3>
               
-              <div className="flex items-center justify-center space-x-4 text-sm text-slate-500 mb-6">
+              <div className="flex items-center justify-center space-x-4 text-sm text-gray-500 mb-6">
                 <div className="flex items-center space-x-1">
                   <File className="w-4 h-4" />
                   <span>{brochure.size}</span>

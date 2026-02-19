@@ -3,7 +3,7 @@ import { Calendar, Clock, MapPin, Users } from 'lucide-react';
 
 const EventHero = ({ event }) => {
   return (
-    <motion.section 
+    <motion.section
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
@@ -23,8 +23,8 @@ const EventHero = ({ event }) => {
               {event.status}
             </span>
           </motion.div>
-          
-          <motion.h1 
+
+          <motion.h1
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}
@@ -32,8 +32,8 @@ const EventHero = ({ event }) => {
           >
             {event.title}
           </motion.h1>
-          
-          <motion.p 
+
+          <motion.p
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.4, duration: 0.6 }}
@@ -41,8 +41,8 @@ const EventHero = ({ event }) => {
           >
             {event.department}
           </motion.p>
-          
-          <motion.p 
+
+          <motion.p
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.5, duration: 0.6 }}
@@ -50,8 +50,8 @@ const EventHero = ({ event }) => {
           >
             {event.organizer}
           </motion.p>
-          
-          <motion.div 
+
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.6 }}
@@ -66,7 +66,7 @@ const EventHero = ({ event }) => {
                 <p className="font-semibold">{new Date(event.date).toLocaleDateString()}</p>
               </div>
             </div>
-            
+
             <div className="flex items-center space-x-3">
               <div className="p-2 bg-white/10 rounded-lg">
                 <Clock className="w-5 h-5" />
@@ -76,7 +76,7 @@ const EventHero = ({ event }) => {
                 <p className="font-semibold">{event.time}</p>
               </div>
             </div>
-            
+
             <div className="flex items-center space-x-3">
               <div className="p-2 bg-white/10 rounded-lg">
                 <MapPin className="w-5 h-5" />
@@ -86,7 +86,7 @@ const EventHero = ({ event }) => {
                 <p className="font-semibold">{event.venue}</p>
               </div>
             </div>
-            
+
             <div className="flex items-center space-x-3">
               <div className="p-2 bg-white/10 rounded-lg">
                 <Users className="w-5 h-5" />
